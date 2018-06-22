@@ -1,0 +1,260 @@
+
+h1, h2, h3 {
+    margin: 0;
+    font: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/*解决chrome表单自动填充产生的黄色背景*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.Input {
+    height: 35px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0;
+    overflow: hidden;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.Button {
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #8590a6;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid;
+    border-radius: 3px;
+}
+.SignFlow-submitButton {
+    width: 100%;
+    margin-top: 30px;
+    height: 36px;
+}
+.Button--primary.Button--blue {
+    color: #fff;
+    background-color: #0084ff;
+}
+.Button--link, .Button--plain {
+    height: auto;
+    padding: 0;
+    line-height: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+.Button--link {
+    color: #175199;
+}
+.ModifyButton {
+    font-size: 15px;
+}
+
+.UserAvatarEditor {
+    cursor: pointer;
+    position: relative;
+}
+.UserAvatar {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    background-color: #fff;
+    border: 4px solid #fff;
+    border-radius: 8px;
+}
+
+.Mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity .2s ease-in;
+}
+.Mask-mask {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    box-sizing: border-box;
+}
+.Mask-mask--black {
+    background: #1a1a1a;
+}
+.Mask-mask {
+    opacity: .03;
+}
+.Mask-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    color: #fff;
+    text-align: center;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.UserAvatarEditor-maskInner {
+    z-index: 4;
+    border: 4px solid #fff;
+    border-radius: 8px;
+}
+.UserAvatarEditor-maskInnerText {
+    white-space: nowrap;
+}
+.UserAvatarEditor-cameraIcon {
+    margin-bottom: 14px;
+    fill: #fff;
+}
+
+.Card {
+    margin-bottom: 10px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    box-sizing: border-box;
+}
+.Card:last-child {
+    margin-bottom: 0;
+}
+
+.ProfileEdit {
+    width: 1000px;
+    padding: 0 16px;
+    margin: 14px auto;
+    font-size: 15px;
+    color: #1a1a1a;
+}
+.ProfileHeader-main {
+    position: relative;
+    margin: 0 20px 24px;
+}
+.ProfileHeader-avatar {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    z-index: 1;
+}
+.ProfileHeader-content {
+    padding-top: 16px;
+    padding-left: 32px;
+    border-left: 164px solid transparent;
+}
+.ProfileHeader-contentHead {
+    position: relative;
+    padding-right: 106px;
+    margin-bottom: 16px;
+}
+.ProfileHeader-title {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ProfileEdit-expandActions {
+    bottom: auto;
+}
+.ProfileHeader-contentHead .Button--plain {
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.ProfileEdit-fields {
+    padding-bottom: 100px;
+    margin-top: 10px;
+}
+
+
+.FullnameField-editable, .FullnameField-readonly {
+    font-size: 26px;
+    font-weight: 600;
+    font-synthesis: style;
+    height: 30px;
+    line-height: 30px;
+}
+.FullnameField-editable {
+    display: inline-block;
+    padding-right: 80px;
+}
+.FullnameField-name {
+    display: inline-block;
+    height: 30px;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.Field {
+    padding: 30px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+.Field-label {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+    font-synthesis: style;
+    line-height: 36px;
+    color: #444;
+}
+.Field-content {
+    padding: 0 64px 0 140px;
+    line-height: 36px;
+}
+.Field-modify {
+    position: absolute;
+    margin-left: 16px;
+    line-height: inherit;
+    transition: opacity .1s;
+}
+.FullnameField-editable .Field-modify {
+    font-weight: 400;
+}
+.box-container {
+    height: 100%;
+}
+.box-content {
+    width: 432px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    top: 15%;
+    left: 0;
+    right: 0;
+    /*bottom: 0;*/
+    position: absolute;
+}
+.title-huge {
+    font-size: 40px;
+    color: #0084ff;
+}
+.SignFlow {
+    margin-top: 16px;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 0;
+    display: flex;
+}
+.SignFlow .Input{
+    letter-spacing: 1.8px;
+}
